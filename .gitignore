@@ -4,4 +4,4 @@ chromedriver-linux/
 **/data/
 **/log/
 .env
-# 무시 규칙 추가
+
