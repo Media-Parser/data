@@ -1,7 +1,5 @@
 chromedriver-linux/
 *.jsonl
 *.log
-**/data/
-**/log/
 .env
 
