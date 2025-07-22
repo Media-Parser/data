@@ -1,0 +1,10 @@
+torch
+transformers
+kobert-transformers
+kss
+numpy
+scikit-learn
+tqdm
+python-mecab-ko
+pymongo
+python-dotenv
