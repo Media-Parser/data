@@ -3,6 +3,12 @@
 네이버 정치 뉴스 기사 데이터를 수집, 정제, 저장하는 자동화 크롤러입니다.  
 크롤링된 뉴스는 MongoDB에 월별 컬렉션으로 저장됩니다.
 
+## 구조
+
+- `dirty/py/` : 날짜별 기사 크롤링 스크립트 (월 단위)
+- `clean/py/` : 전처리 스크립트
+- `mongo_db/` : MongoDB 업로드 스크립트
+
 ## 구성
 
 - **크롤링:** Naver 뉴스 정치면 (`sid1=100`)에서 최신 기사부터 과거 순으로 수집
@@ -24,14 +30,14 @@ ATLAS_URI=mongodb+srv://<user>:<password>@<cluster>/<db>?retryWrites=true&w=majo
 
 ### 2. 크롤링 실행
 ```bash
-python3 dirty/py/crawl_today_hourly.py
+python3 dirty/py/202403.py
 ```
 
 - 결과 저장: dirty/data/merged_YYYYMM.jsonl
 
 ### 3. 전처리 실행
 ```bash
-python3 clean/py/preprocess_today.py
+python3 clean/py/202403.py
 ```
 
 - 결과 저장: clean/data/cleaned_YYYYMM.jsonl
