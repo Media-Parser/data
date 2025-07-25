@@ -22,7 +22,7 @@ data/opinion/
 
 ## 실행 방법
 ---
-1. 환경 설정
+### 1. 환경 설정
 ```bash
 pip install selenium beautifulsoup4 pymongo python-dotenv webdriver-manager
 ```
@@ -31,20 +31,20 @@ pip install selenium beautifulsoup4 pymongo python-dotenv webdriver-manager
 ATLAS_URI=mongodb+srv://<user>:<password>@<cluster>/
 ```
 
-2. 크롤링 실행
+### 2. 크롤링 실행
 ```bash
 python3 py/202506.py
 ```
 - 결과 저장: output/editorial_202506.jsonl
 
-3. 전처리 실행
+### 3. 전처리 실행
 ```bash
 python3 clean/py/202506.py
 ```
 
 - 결과 저장: clean/output/editorial_202506_cleaned.jsonl
 
-4. MongoDB 업로드
+### 4. MongoDB 업로드
 ```bash
 python3 mongo_db/upload.py
 ```
