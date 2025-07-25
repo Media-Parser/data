@@ -2,8 +2,29 @@
 
 정당 논평, 네이버 정치 뉴스, 네이버 사설을 크롤링하여 MongoDB에 저장합니다.
 
-## 실행
+## 수집 대상 및 DB
 
+| 유형       | 저장 DB                        |
+|------------|-------------------------------|
+| 정당 논평  | political_party_commentary     |
+| 정치 뉴스  | news_article_daily             |
+| 네이버 사설| opinion_daily                  |
+
+## 디렉터리 구조
+
+data/
+└── automatic/
+├── a_dirty/ # 정당 논평 크롤링
+├── a_clean/ # 정당 논평 전처리
+├── a_upload/ # 정당 논평 업로드
+├── b_dirty/ # 네이버 사설 크롤링
+├── b_clean/ # 네이버 사설 전처리
+├── b_upload/ # 네이버 사설 업로드
+├── dirty/ # 네이버 뉴스 크롤링
+├── clean/ # 네이버 뉴스 전처리
+├── upload/ # 네이버 뉴스 업로드
+
+## 실행
 ```bash
 bash a_run_party_pipeline.sh        # 정당 논평
 bash run_news_pipeline.sh           # 네이버 정치 뉴스
