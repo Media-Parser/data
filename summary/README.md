@@ -11,7 +11,7 @@ summary/
 ├── mongo_db/          # MongoDB 업로드 스크립트
 │   └── upload.py
 ├── output/            # 월별 요약 결과 파일 (summarized_opinion_YYYYMM.jsonl)
-├── run_YYYYMM.py      # 실행 스크립트 (월별 요약)
+├── run_YYYYMM.py      # 실행 스크립트
 └── requirements.txt   # 실행에 필요한 패키지 목록
 ```
 
