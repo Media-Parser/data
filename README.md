@@ -15,11 +15,11 @@ data/
 ## 주요 구성 요소
 | 폴더                 | 설명                                    |
 | ------------------ | ------------------------------------- |
-| `automatic/`       | 전체 파이프라인 자동화 스크립트|
-| `news_crawler/`    | 네이버 정치 뉴스 크롤링 → 전처리 → MongoDB 업로드                |
-| `opinion/`         | 네이버 사설 기사 크롤링 → 전처리 → MongoDB 업로드                    |
-| `political_frame/` | 4개 정당 논평 크롤링 → 전처리 → MongoDB 업로드    |
-| `summary/`         | KoBERT + MMR 기반 요약 → MongoDB 업로드   |
+| automatic/      | 전체 파이프라인 자동화 스크립트|
+| news_crawler/   | 네이버 정치 뉴스 크롤링 → 전처리 → MongoDB 업로드                |
+| opinion/         | 네이버 사설 기사 크롤링 → 전처리 → MongoDB 업로드                    |
+| political_frame/ | 4개 정당 논평 크롤링 → 전처리 → MongoDB 업로드    |
+| summary/        | KoBERT + MMR 기반 요약 → MongoDB 업로드   |
 
 
 
