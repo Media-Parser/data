@@ -13,8 +13,7 @@
 ## 디렉터리 구조
 
 ```
-data/
-└── automatic/
+data/automatic/
 ├── a_dirty/ # 정당 논평 크롤링
 ├── a_clean/ # 정당 논평 전처리
 ├── a_upload/ # 정당 논평 업로드
